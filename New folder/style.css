@@ -33,7 +33,7 @@ nav a:hover { color: #ff6b6b; }
 .hero-text h1 { font-size: 48px; }
 .hero-text h1 span { color: #ff6b6b; }
 .hero-text h2 { font-size: 32px; margin-bottom: 20px; }
-.hero-text h2 span { color: #ff6b6b; }
+#changing-text { color: #ff6b6b; transition: opacity 0.5s ease-in-out; }
 .hero-text p { max-width: 500px; color: #ccc; margin-bottom: 20px; }
 .social-icons a {
     font-size: 22px;
