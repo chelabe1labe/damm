@@ -6,3 +6,17 @@ document.querySelectorAll('[data-rating]').forEach(starBox => {
     let starsHTML = '★'.repeat(fullStars) + (halfStar ? '½' : '') + '☆'.repeat(5 - fullStars - halfStar);
     starBox.innerHTML = `${rating} ${starsHTML}`;
 });
+
+// Changing text effect
+const roles = ["Developer", "Video Editor"];
+let roleIndex = 0;
+const changingText = document.getElementById("changing-text");
+
+setInterval(() => {
+    changingText.style.opacity = 0; // fade out
+    setTimeout(() => {
+        roleIndex = (roleIndex + 1) % roles.length;
+        changingText.textContent = roles[roleIndex];
+        changingText.style.opacity = 1; // fade in
+    }, 500);
+}, 3000);
