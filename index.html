@@ -1,58 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animated Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Amine El Bachiri - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b9b5f8b05.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Mohamed Amine</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="mailto:mohamedamineelbachiri2005@gmail.com">Contact</a>
+        </nav>
+    </header>
 
-  <!-- Loading screen -->
-  <div id="loading-screen">
-    <div class="loader"></div>
-  </div>
+    <!-- HERO -->
+    <section class="hero hidden">
+        <div class="profile-img">
+            <img src="profile.jpg" alt="Mohamed Amine El Bachiri">
+        </div>
+        <div class="hero-text">
+            <h1>Hi, It's <span>Mohamed Amine El Bachiri</span></h1>
+            <h2>I'm a <span></span></h2>
+            <p>I am passionate about creating digital solutions, with expertise in professional video editing.</p>
+            <div class="social-icons">
+                <a href="mailto:mohamedamineelbachiri2005@gmail.com" target="_blank" class="gmail"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/chelabe1labe" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/p_______goodguy?igsh=MWFxY2kxNDlqd2R5Mg==" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="buttons">
+                <a href="mailto:mohamedamineelbachiri2005@gmail.com" class="btn">Hire me</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Custom Cursor -->
-  <div class="custom-cursor" id="customCursor"></div>
+    <!-- SKILLS -->
+    <section class="skills hidden" id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">Video Editing</div>
+        </div>
+    </section>
 
-  <!-- Header -->
-  <header class="section-animate">
-    <h2>I’m a <span id="changing-text"></span></h2>
-  </header>
+    <!-- REVIEWS -->
+    <section class="reviews hidden">
+        <h2>What My Clients Say</h2>
+        <div class="review">
+            <div class="stars" data-rating></div>
+            <p>"Amazing work! Delivered my project on time and exceeded my expectations."</p>
+        </div>
+        <div class="review">
+            <div class="stars" data-rating></div>
+            <p>"Very professional and easy to work with. Highly recommended!"</p>
+        </div>
+        <div class="review">
+            <div class="stars" data-rating></div>
+            <p>"Built a stunning website for me in just one day. Worth every penny."</p>
+        </div>
+    </section>
 
-  <!-- Profile Section -->
-  <section class="profile">
-    <img src="profile.jpg" alt="Profile" class="fade-in-zoom" />
-  </section>
+    <!-- FOOTER -->
+    <section class="hire">
+        <p>If you want a website like this, I can build it for you for only <span class="pulse">$10</span>.</p>
+        <p>Just contact me via Gmail or Instagram.</p>
+        <div class="hire-icons">
+            <a href="mailto:mohamedamineelbachiri2005@gmail.com" target="_blank" class="gmail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/chelabe1labe" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/p_______goodguy?igsh=MWFxY2kxNDlqd2R5Mg==" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <section class="skills section-animate">
-    <h3>Skills</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Video Editing</li>
-    </ul>
-  </section>
-
-  <!-- Reviews -->
-  <section class="reviews section-animate">
-    <h3>Reviews</h3>
-    <p>"Great work!" - Client A</p>
-    <p>"Fast and professional." - Client B</p>
-  </section>
-
-  <!-- Hire Me -->
-  <section class="hire section-animate">
-    <h3>Hire Me</h3>
-    <button>Contact</button>
-  </section>
-
-  <!-- Back to Top -->
-  <button id="backToTop" title="Go to top">⬆</button>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
